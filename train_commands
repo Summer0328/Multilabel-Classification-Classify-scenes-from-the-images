@@ -1,0 +1,8 @@
+# Train 
+python retrain.py \
+--image_dir ./DATASET/ \
+--tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/2 \
+--num_classes=5
+
+# Test
+python label_image.py --image=test.jpeg
