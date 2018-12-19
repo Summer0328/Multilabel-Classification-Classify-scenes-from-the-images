@@ -23,7 +23,14 @@ All the images should be kept in *images* folder.Along with the images you will 
 #### Format of lst files
 It should contain a unique image index, followed by a tab-separated list of binary flags for each label (1 to indicate label exists in image, and 0 to indicate label doesn't exist), followed by a path to the image.
 Here I converted **labels.json** file into required format using **data_generation.py** python file.This will give **dataset.lst** file.
-Shuffle this labels using ```bash python shuf dataset.lst```.Divide data inside that file into **dataset_train.lst** and **dataset_test.lst**.
+Shuffle this labels using ```bash python shuf dataset.lst```.Divide data inside that file into **dataset_train.lst** and **dataset_test.lst**
+```bash
+634	0	1	0	0	0	images/634.jpg	
+1486	0	0	0	1	1	images/1486.jpg	
+1289	0	0	0	1	0	images/1289.jpg	
+552	0	1	1	0	1	images/552.jpg	
+1752	0	0	0	0	1	images/1752.jpg	
+```
 
 2) Training :
 Create folders *MODEL_DETAILS* and *MODEL* in the same directory.
