@@ -21,7 +21,7 @@ All the images should be kept in *images* folder.Along with the images you will 
 -- 3.jpg
 ```
 #### Format of lst files
-It should contain a unique image index, followed by a tab-separated list of binary flags for each label (1 to indicate label exists in image, and 0 to indicate label doesn't exist), followed by a path to the image.
+It should contain a unique image index, followed by a tab-separated list of binary flags for each label (1 to indicate label exists in image, and 0 to indicate label doesn't exist removed -1 given in the json file), followed by a path to the image.
 Here I converted **labels.json** file into required format using **data_generation.py** python file.This will give **dataset.lst** file.
 Shuffle this labels using ```bash python shuf dataset.lst```.Divide data inside that file into **dataset_train.lst** and **dataset_test.lst**. 
 Sample record in list file-
