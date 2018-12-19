@@ -50,3 +50,5 @@ To train the model run the below command:
 python label_image.py \
 --image=test.jpeg
 ```
+
+![sample-result](result.png)
